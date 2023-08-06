@@ -1,0 +1,74 @@
+ 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <!--- About Start-->
+  <section data-aos="zoom-in-down">
+    <div class="container" id="about">
+     </div>
+  </section>      
+  
+  <div id="About">
+    <div class="container">
+        <div class="row">
+            <!--<div class="about-col-1">
+                <img src="sudha.jpg">
+            </div>-->
+            <div class="about-col-2">
+              <h1 class ="sub-title">About Me</h1>
+                <p> Seeking a beginner role to enhance and explore my technical knowledge gained at JNTUK University in the last three years. I hold a B.Tech degree from GIET Engineering college college</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experiance')">Experiance</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                        <li><span>App Devlopment</span><br>Building Android/IOS apps</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>Fresher</span></li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>B.Tech from GIET Engineering college<br>CGPA:7.8(Still persuing)</li>
+                        <li><span>2020</span><br>Intermediate from sri chaitanya college<br>CGPA:9.5</li>
+                        <li><span>2018</span><br>SSC in Bhashyam high school<br>CGPA:9.8</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--About End-->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         } 
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+    }    
+</script>
+  </body>
+  </html>
